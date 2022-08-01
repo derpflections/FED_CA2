@@ -17,5 +17,14 @@ function imageReplace (){
     }
 }
 
+function textReplace (){
+    if (windowWidth < 1080){
+        document.getElementById("row1selfportrait").src = " "
+    } else if(windowWidth > 1080){
+        document.getElementById("row1selfportrait").src = "../images/index/self-portrait-min.jpg"
+    }
+}
+
 setInterval(pollViewport, 50)
 setInterval(imageReplace, 50)
+setInterval(textReplace, 50)

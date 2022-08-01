@@ -35,6 +35,6 @@ html{
     display:block;
 }
 
-div {
-    overflow:hidden;
+div.maincontent{
+    overflow-x:hidden
 }
