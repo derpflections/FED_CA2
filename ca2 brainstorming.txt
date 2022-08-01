@@ -24,7 +24,7 @@ possible-
 
 css graphical design-
 	usage of a background image (done)
-	element borders
+	element borders (done w/ bootstrap)
 	text/box shadows
 	gradients (refer to theme) (bg image gradient?) (done)
 	? -possible use of a image map to help navigation
