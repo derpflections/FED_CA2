@@ -30,3 +30,7 @@ ul#navbardropdown{
 ul#navbardropdown > li > a:hover {
     color:black;
 }
+
+div#row1divtext{
+    font-size:1.5em;
+}

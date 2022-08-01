@@ -6,11 +6,11 @@ function pollViewport (){
 }
 
 function imageReplace (){
-    if (windowWidth < 900){ //checks if window width is below 900px, and replaces image if below
+    if (windowWidth < 1200){ //checks if window width is below 900px, and replaces image if below
         document.getElementById("parallax-content1").style.backgroundImage = "url('../images/index/parallax2-crop.jpg')"
         document.getElementById("parallax-content2").style.backgroundImage = "url('../images/index/parallax-crop_50.jpg')"
         document.getElementById("parallax-content3").style.backgroundImage = "url('../images/index/parallax2-crop.jpg')"
-    } else if (windowWidth > 900){ //replaces image if viewport is above 900px
+    } else if (windowWidth > 1200){ //replaces image if viewport is above 900px
         document.getElementById("parallax-content1").style.backgroundImage = "url('../images/index/parallax2.jpg')"
         document.getElementById("parallax-content2").style.backgroundImage = "url('../images/index/parallax.jpg')"
         document.getElementById("parallax-content3").style.backgroundImage = "url('../images/index/parallax2.jpg')"
@@ -18,10 +18,10 @@ function imageReplace (){
 }
 
 function textReplace (){
-    if (windowWidth < 1080){
-        document.getElementById("row1selfportrait").src = " "
-    } else if(windowWidth > 1080){
-        document.getElementById("row1selfportrait").src = "../images/index/self-portrait-min.jpg"
+    if (windowWidth < 1200){
+        document.getElementById("row1div").innerHTML = ""
+    } else if(windowWidth > 1200){
+        document.getElementById("row1div").innerHTML = '<img src="../images/index/self-portrait-min.jpg"  id="row1selfportrait" class="align-middle" height="320" width="535">'
     }
 }
 
