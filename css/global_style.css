@@ -34,3 +34,7 @@ html{
 .dropdown:hover .dropdown-menu{
     display:block;
 }
+
+div.maincontent{
+    overflow-x: hidden;
+}
