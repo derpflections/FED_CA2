@@ -1,0 +1,26 @@
+@charset "utf-8";
+.parallax-content{
+    background-image:url(../images/feedback/parallax1.JPG);
+    min-height:500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content2{
+    background-image:url(../images/feedback/parallax2.JPG);
+    min-height:500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.maincontent{
+    height:500px;
+    background-color: white;
+    border:1px solid black;
+}
+
+

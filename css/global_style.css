@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: worksans;
+    src: url(../others/WorkSans-VariableFont_wght.ttf);
+}
+
+a, a.navbar-brand{
+    font-family: worksans, Arial, Helvetica, sans-serif;
+    text-decoration:none;
+    color:white;
+    transition: color 0.3s, font-size 1s;
+}
+
+div{
+    font-family: worksans, Arial, Helvetica, sans-serif;
+}
+
+a:hover{
+    color:orange;
+}
+
+a.navbar-brand:hover{
+    color:orange;
+    font-size: 3em;
+}
+
+html{
+    height:100%;
+    background: rgb(33,37,41);
+    background: linear-gradient(180deg, rgba(33,37,41,1) 0%, rgba(33,37,41,1) 10%, rgba(255,253,253,1) 100%);
+}
+
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+
+div {
+    overflow:hidden;
+}

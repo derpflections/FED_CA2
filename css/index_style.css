@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.parallax-content{
+    background-image:url(../images/index/parallax2.jpg);
+    min-height:500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content2{
+    background-image:url(../images/index/parallax.JPG);
+    min-height:500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.maincontent{
+    background-color: white;
+    border:1px solid black;
+}
+
+ul#navbardropdown{
+    border:1px solid white;
+}
+
+ul#navbardropdown > li > a:hover {
+    color:black;
+}

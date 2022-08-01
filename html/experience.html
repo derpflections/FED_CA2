@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lee Hong Yi</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<!-- Javascripts   Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!--Personal CSS-->
+<link href="../css/global_style.css" rel="stylesheet"/>
+<link href="../css/experience_style.css" rel="stylesheet"/>
+<link rel="icon" href="../images/icon.JPG" />
+<!--Personal Javascript-->
+<script src="../javascript/experiences/experienceImageReplacer.js" defer></script>
+</head>
+
+<body>
+  <!--start of navbar-->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-dark"> <!--navbar collapses at lg breakpoint, stuck to top (darkmode)-->
+      <div class="container-fluid">
+        <a class="navbar-brand px-lg-4 px-2" href="index.html">Lee Hong Yi</a> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#indexNavbar" aria-controls="indexNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span> <!-- this line and the line above are used to generate the button to open navbar when collapsed-->
+        </button>
+        <div class="collapse navbar-collapse" id="indexNavbar">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item active px-lg-4 py-1 px-3"><a class="active" aria-current="page" href="index.html">Homepage</a></li>
+              <li class="nav-item px-lg-4 py-1 px-3"><a class="" href="experience.html">Experiences</a></li>
+              <li class="nav-item dropdown px-lg-4 py-1 px-3">
+                <a class="dropdown-toggle" href="career.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Career Options</a>
+                <ul class="dropdown-menu bg-dark" id="navbardropdown">
+                  <li><a class="dropdown-item text-light" href="career.html#maincontent1">Career 1</a></li>
+                  <li><a class="dropdown-item text-light" href="career.html#maincontent2">Career 2</a></li>
+                  <li><a class="dropdown-item text-light" href="career.html#maincontent3">Career 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item px-lg-4 py-1 px-3"><a class="" href="feedback.html">Feedback</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- end of navbar -->
+
+  <div id="parallax-content"></div>
+  <div class="maincontent">hello its me</div>
+  <div id="parallax-content2"></div>
+  <div class="maincontent">hello its me again</div>
+  <div id="parallax-content"></div>
+</body>
+</html>
