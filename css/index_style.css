@@ -59,6 +59,7 @@ div#row1divtext::after{
 
 @keyframes image-appear{
     0%{opacity:0 ;}
+    100%{opacity:1 ;}
 }
 
 img#row1selfportrait{

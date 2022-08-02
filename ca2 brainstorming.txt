@@ -1,5 +1,6 @@
 use of carousel to display images highlighting career options
 	-possible use of content within carousel (i.e highlighting career options or highlighting experiences in SP with pictures w/ possible table usage)
+	-carousel can also be used to display comments made by previous teachers (highlighting own expertise/personality/etc)
 
 usage of a similar dropdown nav bar w/ animation 
 	-inclusion of icons in nav bar (would clutter page -- not being used)
@@ -42,6 +43,7 @@ javascript usage
 	? - possible use of js to validate form and other components
 	? - creation of clock ?? (for fun )
 	- use defer method to load scripts
+	- scroll snap to open div which redirects user??
 
 s
 -finalize design 1.5 weeks before due date 
