@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +16,8 @@
 <link rel="icon" href="../images/icon.JPG" />
 <!--Personal Javascript-->
 <script src="../javascript/index/indexImageReplacer.js" defer></script>
+<script src="../javascript/index/indexScrollRedirect.js" defer></script>
+<script src="../javascript/index/indexAnimations.js" defer></script>
 </head>
 
 <body>
@@ -48,13 +51,12 @@
   <!-- end of navbar -->
 
   <!--start of page-specific content-->
-
   <div class="parallax-content" id="parallax-content1"></div>
 
   <div class="maincontent border border-dark">      
-    <div class="row">
-      <div class="col-xl-6 ps-2" id="row1divtext">Hi! I am Hong Yi, a student currently undertaking the Common ICT Programme in Singapore Polytechnic. I am aged 16, and am a alumni of Swiss Cottage Secondary. I also have a passion for history and technology, and dream of being a data scientist in the future. I also have interests in photography and tanks.</div>
-      <div class="col-xl-6 d-flex justify-content-end" id ="row1div"><img src="../images/index/self-portrait-min.jpg"  id="row1selfportrait" class="align-middle" height="320" width="535"></div>
+    <div class="row d-flex justify-content-between">
+      <div class="col-xl-6 p-4 pt-5 ps-5" id="row1divtext">Hi! I am Hong Yi, a student currently undertaking the Common ICT Programme in Singapore Polytechnic. I am aged 16, and am a alumni of Swiss Cottage Secondary. I also have a passion for history and technology, and dream of being a data scientist in the future. Furthermore, I also have interests in photography and tanks. I would describe myself as passionate about my work, using it as a steady source of motivation to push me to do my best in anything I undertake.</div>
+      <div class="col-xl-6 p-3 pe-5 d-flex justify-content-end" id ="row1div"><img src="../images/index/self-portrait-min.jpg"  id="row1selfportrait" class="align-middle rounded pe-3" height="320" width="535"></div>
     </div>
   </div>
   
@@ -62,6 +64,7 @@
 
   <div class="maincontent border border-dark"> 
     <div class="row">
+
       <div class="col-xl-4 col-md-12 border border-dark border-right" id="aboutMeMC2R1">
         <div class="display-6 text-center mb-2 border-bottom border-dark">Personal Interests</div>
         <div class="mt-2 ms-1 p-2">History intrigues me, as learning about the past teaches me about what's happening in the present, allowing me to have a deeper understanding about the events of today.</div>
@@ -70,18 +73,24 @@
 
       <div class="col-xl-4 col-md-6 border border-dark border-right" id="aboutMeMC2R2">
         <div class="display-6 text-center mb-2 border-bottom border-dark">My Values</div>
-        <div class="mb-2 p-2">To me, hardwork is the most important thing, and is they key to suceeding in life. No matter if one is talented or not, they can easily be beat by someone who is able to dedicate their heart and soul into their work. Not only does hardwork determine success, but one's dedication and willingness to continously learn also plays a important role.</div>
+        <div class="mb-2 p-2">To me, hardwork is the most important thing, and is they key to suceeding in life. No matter if one is talented or not, they can easily be beat by someone who is able to dedicate their heart and soul into their work.</div>
+        <div class="mb-2 ms-1 p-2">Not only does hardwork determine success, but one's dedication and willingness to continously learn also plays a important role.</div>
       </div>
 
       <div class="col-xl-4 col-md-6 border border-dark border-left" id="aboutMeMC2R3">
         <div class="display-6 text-center mb-2 border-bottom border-dark">My Personality</div>
         <div class="mb-2 p-2">I am a outgoing, and friendly person, who is able to live in the moment and dive right into the action. I am also a socialable individual, able to work well with others and make excellent use of social interactions.</div>
+        <div class="mb-2 ms-1 p-2">My jovial nature and great sense of humor will help me to bond well and build good rapport with those around me, no matter where I may be.</div>
       </div>
 
     </div>
   </div>
 
   <div class="parallax-content" id="parallax-content3"></div>
+
+  <div class="maincontent" id="nextpage" onscroll="nextpage()">
+    <div>Click me to continue to the next page!</div>
+  </div>
 
 </body>
 </html>

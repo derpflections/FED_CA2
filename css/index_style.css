@@ -10,7 +10,7 @@
 }
 
 .parallax-content2{
-    background-image:url(../images/index/parallax.JPG);
+    background-image:url(../images/index/parallax.jpg);
     min-height:500px;
     background-attachment: fixed;
     background-position: center;
@@ -33,4 +33,34 @@ ul#navbardropdown > li > a:hover {
 
 div#row1divtext{
     font-size:1.5em;
+}
+
+div#nextpage{
+    min-height:240px;
+}
+
+img#row1selfportrait{
+    border:1px solid black;
+    border-radius:3px;
+}
+
+@keyframes cursor-blink{
+    0%{opacity: 0;}
+}
+
+div#row1divtext::after{
+    content : "_";
+    width: 1px;
+    height: 20px;
+    background-color: black;
+    animation: cursor-blink 1.5s steps(2) infinite;
+    padding:1px;
+}
+
+@keyframes image-appear{
+    0%{opacity:0 ;}
+}
+
+img#row1selfportrait{
+    animation: image-appear 1s linear 1s;
 }
