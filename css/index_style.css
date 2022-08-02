@@ -63,5 +63,7 @@ div#row1divtext::after{
 }
 
 img#row1selfportrait{
-    animation: image-appear 1s linear 1s;
+    animation-name:image-appear;
+    animation-duration:1s;
+    animation-delay:4s;
 }
