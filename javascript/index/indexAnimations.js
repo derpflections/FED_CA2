@@ -1,6 +1,8 @@
 var i = 0 
 var progress = 0
+var r1ImgleftPadding = 535
 document.getElementById("row1divtext").innerHTML = ""
+document.getElementById("row1selfportrait").style.padding = r1ImgleftPadding + "px"
 
 
 function row1divtextPrint(){
@@ -13,9 +15,11 @@ function row1divtextPrint(){
 
 function row1selfportrait(){
     document.getElementById("row1selfportrait").style.opacity = progress
-    console.log(document.getElementById("row1selfportrait").style.right)
-    progress += 0.05
+    r1ImgleftPadding -= (progress * 100)
+    document.getElementById("row1selfportrait").style.paddingLeft = r1ImgleftPadding + "px"
+    console.log(document.getElementById("row1selfportrait").style.paddingLeft)
+    progress += 0.01
 }
 
 setInterval(row1divtextPrint, 10)
-setInterval(row1selfportrait, 50)
+setInterval(row1selfportrait, 10)
