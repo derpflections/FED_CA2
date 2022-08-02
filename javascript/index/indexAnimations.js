@@ -3,6 +3,9 @@ var progress = 0
 var r1ImgleftPadding = 535
 document.getElementById("row1divtext").innerHTML = ""
 document.getElementById("row1selfportrait").style.padding = r1ImgleftPadding + "px"
+document.getElementById("aboutMeMC2R1").style.opacity = 0
+document.getElementById("aboutMeMC2R2").style.opacity = 0
+document.getElementById("aboutMeMC2R3").style.opacity = 0
 
 
 function row1divtextPrint(){
@@ -22,5 +25,20 @@ function row1selfportrait(){
     }
 }
 
+function row2fadeIn(){
+    function aboutmeRows(){
+        if(progress < 100){
+            document.getElementById("aboutMeMC2R1").style.opacity = (progress/100)
+            document.getElementById("aboutMeMC2R2").style.opacity = (progress/100)
+            document.getElementById("aboutMeMC2R3").style.opacity = (progress/100)
+            progress++
+        }
+    }
+    if (document.documentElement.scrollTop > 290){
+        setInterval(aboutmeRows,50)
+    }
+}
+
 setInterval(row1divtextPrint, 10)
 setInterval(row1selfportrait, 10)
+setInterval(row2fadeIn, 50)

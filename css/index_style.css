@@ -36,7 +36,8 @@ div#row1divtext{
 }
 
 div#nextpage{
-    min-height:240px;
+    min-height:200px;
+    overflow-y:scroll
 }
 
 img#row1selfportrait{
