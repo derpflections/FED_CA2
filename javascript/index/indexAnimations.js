@@ -14,11 +14,12 @@ function row1divtextPrint(){
 }
 
 function row1selfportrait(){
-    document.getElementById("row1selfportrait").style.opacity = progress
-    r1ImgleftPadding -= (progress * 100)
-    document.getElementById("row1selfportrait").style.paddingLeft = r1ImgleftPadding + "px"
-    console.log(document.getElementById("row1selfportrait").style.paddingLeft)
-    progress += 0.01
+    if (window.innerWidth > 1200){
+        document.getElementById("row1selfportrait").style.opacity = progress
+        r1ImgleftPadding -= (progress * 100)
+        document.getElementById("row1selfportrait").style.paddingLeft = r1ImgleftPadding + "px"
+        progress += 0.01
+    }
 }
 
 setInterval(row1divtextPrint, 10)
