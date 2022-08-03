@@ -35,5 +35,5 @@ function destPageRedirect(){
 }
 
 if (filename == 'loadingPage.html'){
-    setTimeout(destPageRedirect, 1000)
+    setTimeout(destPageRedirect, 2500)
 }
