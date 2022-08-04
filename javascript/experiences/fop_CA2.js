@@ -246,7 +246,7 @@ function fop_ca2(){
                     oldestDays = this.dateConverter(tempDate) ;
                     oldestMember = this.testSet[i].name ;
                 }
-                if (tempDate > youngestMs){  //if the current age of the member is larger than that of the youngest, set the current member's details to the new youngest.
+                if (tempDate > youngestMs){  //if the current age of the member is larger than that of the youngsest, set the current member's details to the new youngest.
                     youngestMs = tempDate ;
                     youngestDays = this.dateConverter(tempDate) ;
                     youngestMember = this.testSet[i].name ;
@@ -458,4 +458,9 @@ function fop_ca2(){
                     document.getElementById("fop-terminal").innerHTML+=("Please enter a valid input. \n") ; //prints if menu input is not a number
                 }
         }while(tf) ;
+}
+
+
+function jstest(){
+
 }
