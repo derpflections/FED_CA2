@@ -36,8 +36,8 @@ div#row1divtext{
 }
 
 div#nextpage{
-    min-height:200px;
-    overflow-y:scroll
+    min-height:240px;
+    overflow-y:scroll;
 }
 
 img#row1selfportrait{
@@ -57,3 +57,4 @@ div#row1divtext::after{
     animation: cursor-blink 1.5s steps(2) infinite;
     padding:1px;
 }
+

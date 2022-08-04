@@ -34,11 +34,23 @@ function row2fadeIn(){
             progress++
         }
     }
-    if (document.documentElement.scrollTop > 290){
+    if (document.documentElement.scrollTop > 600){
         setInterval(aboutmeRows,50)
     }
 }
 
-setInterval(row1divtextPrint, 10)
+function fontSizeChanger(){
+    if (window.innerWidth < 576){
+        document.getElementById("row1divtext").style.fontSize = "1em"
+        document.getElementById("scrollBar").style.fontSize = "1em"
+    } else if (window.innerWidth > 576){
+        document.getElementById("row1divtext").style.fontSize = "1.5em"
+        document.getElementById("scrollBar").style.fontSize = "2.5rem"
+    }
+}
+
+
+setInterval(row1divtextPrint, 20)
 setInterval(row1selfportrait, 10)
 setInterval(row2fadeIn, 50)
+setInterval(fontSizeChanger, 50)
