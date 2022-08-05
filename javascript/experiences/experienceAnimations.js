@@ -6,4 +6,13 @@ function textResizer(){
  }
 }
 
+function accordionOpener(){
+   if (window.innerWidth > 2000){
+      document.getElementById("collapseFour").classList.add("show")
+   } else {
+      document.getElementById("collapseFour").classList.remove("show")
+   }
+}
+
 setInterval(textResizer, 50)
+accordionOpener()

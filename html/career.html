@@ -33,11 +33,11 @@
             <li class="nav-item active px-lg-4 py-1 px-3"><a class="active" aria-current="page" href="index.html">Homepage</a></li>
             <li class="nav-item px-lg-4 py-1 px-3"><a class="" href="experience.html">Experiences</a></li>
             <li class="nav-item dropdown px-lg-4 py-1 px-3">
-              <a class="dropdown-toggle" href="career.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Career Options</a>
-              <ul class="dropdown-menu bg-dark" id="navbardropdown">
-                <li><a class="dropdown-item text-light" href="career.html#maincontent1">Career 1</a></li>
-                <li><a class="dropdown-item text-light" href="career.html#maincontent2">Career 2</a></li>
-                <li><a class="dropdown-item text-light" href="career.html#maincontent3">Career 3</a></li>
+              <a class="dropdown-toggle" href="career.html" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Career Options</a>
+              <ul class="dropdown-menu bg-dark dropdown-menu-dark" aria-labelledby="dropdownMenuLink" id="navbardropdown">
+                <li><a class="dropdown-item" href="career.html#maincontent1">Data Analyst</a></li>
+                <li><a class="dropdown-item" href="career.html#maincontent2">Data Engineer</a></li>
+                <li><a class="dropdown-item" href="career.html#maincontent3">Cybersecurity Analyst</a></li>
               </ul>
             </li>
             <li class="nav-item px-lg-4 py-1 px-3"><a class="" href="feedback.html">Feedback</a></li>
@@ -49,11 +49,59 @@
 </header>
 <!-- end of navbar -->
   <div id="parallax-content"></div>
-  <div class="maincontent" id="maincontent1">hello its me</div>
+
+  <div class="maincontent" id="maincontent1">
+    <div>
+      <h2 class="border border-dark border-bottom text-center py-3 bg-dark text-light" id="jt1">Data Analyst</h2>
+      <div class="row">
+      <div class="col-md-9 px-4 pt-4" id="desc1">
+          <p id="d1p1" class="fs-3">Data analysts collect, analyze and store data, using it to help client and companies make better business decisions. Such a job has always intrigued me, as i enjoy looking at datasets, and looking for potential trends which may be present.
+              I feel that I would be a great fit for such a role, as I am highly organized, meaning that I would be able to find such trends much easier than the average person.</p>
+      </div>
+      <div class="col-md-3">
+        <img class="py-3"  id="c1pic" src="../images/career/data-analyst.jpeg" alt="data analyst" width="420" height="320">
+      </div>
+      </div>
+      <!--"unknown" by https://www.betterteam.com is licensed under CC BY 4.0-->
+    </div>
+  </div>
+
   <div id="parallax-content2"></div>
-  <div class="maincontent" id="maincontent2">hello its me again</div>
+
+  <div class="maincontent" id="maincontent2">
+    <div>
+      <h2 class="border border-dark border-bottom text-center py-3 bg-dark text-light" id="jt2">Data Engineer</h2>
+      <div class="row">
+        <div class="col-md-9 px-4 pt-4" id="desc2">
+            <p id="d2p1" class="fs-3">A data engineer is an IT worker whose primary job is to prepare data for analytical or operational uses. These software engineers are typically responsible for building data pipelines to bring together information from different source systems. 
+              Such a job requires having the ability to improvise, and think on your feet, in order to counter and fix any issues which may crop up when programming. My skill set is perfectly suited for this, as I am able to quickly change focus from project to project, allowing me to have quick reaction times.</p>
+        </div>
+        <div class="col-md-3 justify-content-center">
+          <img class="py-3" id="c2pic" src="../images/career/dataenginner.jpg" alt="data enginner" width="480" height="360">
+        </div>
+      </div>
+      <!--"unknown" by freelancermap.com is licensed under CC BY 4.0-->
+    </div>
+  </div>
+
   <div id="parallax-content3"></div>
-  <div class="maincontent" id="maincontent3">3rd career option</div>
+
+  <div class="maincontent" id="maincontent3">
+    <div>
+      <h2 class="border border-dark border-bottom text-center py-3 bg-dark text-light" id="jt3">Cybersecurity Analyst</h2>
+      <div class="row">
+        <div class="col-md-9 px-4 pt-5" id="desc3">
+            <p id="d3p1" class="fs-3">A cybersecurity analyst protects company hardware, software, and networks from cybercriminals. The analyst's primary role is to understand company IT infrastructure in detail, monitor it at all times, and evaluate threats that could potentially breach the network.
+                Such a role requires a consientous effort to ensure that the company's network is protected at all times, as a moment's lapse in concentration lead to a potentially catastrophic cyber attack. Having the ability to constantly be on the lookout for such threats is highly important, which is why I think my skillset would be perfect for the role. </p>
+        </div>
+        <div class="col-md-3">
+          <img class="my-3 ms-5" id="c3pic" src="../images/career/Cyber-Security-Analyst.png" alt="cyber security" width="500" height="293">
+        </div>
+      </div>
+      <!--"unknown" by cybintsolutions.com is licensed under CC BY 4.0-->
+    </div>
+  </div>
+
   <div id="parallax-content"></div>
 
   <div class="position-relative" id="nextpage" onscroll="careerPageRedirect()">

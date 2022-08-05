@@ -50,7 +50,7 @@ function fontSizeChanger(){
 }
 
 
-setInterval(row1divtextPrint, 20)
+setInterval(row1divtextPrint, 10)
 setInterval(row1selfportrait, 10)
 setInterval(row2fadeIn, 50)
 setInterval(fontSizeChanger, 50)
