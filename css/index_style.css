@@ -58,3 +58,7 @@ div#row1divtext::after{
     padding:1px;
 }
 
+div#aboutMeMC2R1, div#aboutMeMC2R2, div#aboutMeMC2R3{
+    font-size:1.2em;
+    
+}
