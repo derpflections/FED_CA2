@@ -36,3 +36,7 @@ div#nextpage{
     min-height:200px;
     overflow-y:scroll
 }
+
+fieldset{
+    color:black;
+}
