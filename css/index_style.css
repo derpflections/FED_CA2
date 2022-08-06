@@ -31,10 +31,6 @@ ul#navbardropdown > li > a:hover {
     color:black;
 }
 
-div#row1divtext{
-    font-size:1.5em;
-}
-
 div#nextpage{
     min-height:240px;
     overflow-y:scroll;
@@ -58,7 +54,3 @@ div#row1divtext::after{
     padding:1px;
 }
 
-div#aboutMeMC2R1, div#aboutMeMC2R2, div#aboutMeMC2R3{
-    font-size:1.2em;
-    
-}
