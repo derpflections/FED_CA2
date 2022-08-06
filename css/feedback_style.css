@@ -22,3 +22,26 @@ div.maincontent{
     background-color: white;
     border:1px solid black;
 }
+
+section#form{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+div#easerating, div#navrating{
+    background-color: #212529;
+    color:white;
+}
+
+input#mailList{
+    width:100px;
+    height:100px;
+}
+
+div#ratingDiv{
+    display:inline;
+}
+
+input#rating{
+    width:80%;
+}
