@@ -23,14 +23,25 @@ div.maincontent{
     border:1px solid black;
 }
 
-section#form{
+section.formsectionfull{
     margin-left:auto;
     margin-right:auto;
+    width:80%;
+    background-color: white;
+    border: 3px solid black;
+}
+
+section.formsectionshrink{
+    margin-left:auto;
+    margin-right:auto;
+    background-color: white;
+    border:3px solid black;
 }
 
 div#easerating, div#navrating{
     background-color: #212529;
     color:white;
+    border:3px solid white;
 }
 
 input#mailList{
@@ -44,4 +55,43 @@ div#ratingDiv{
 
 input#rating{
     width:80%;
+}
+
+div#formdiv {
+    background: linear-gradient(358deg, #ffffff, #212529, #7a7a7a, #7a7a7a, #212529, #ffffff);
+    background-size: 1200% 1200%;
+    animation: gradAnimation 15s ease infinite;
+}
+
+@keyframes gradAnimation {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+
+fieldset div:focus{
+    box-shadow: 5px 10px #888888;
+}
+
+i{
+    font-size:3rem
+}
+
+#instagram {
+    background: linear-gradient(336deg, #515bd4, #8134af, #dd2a7b, #feda77, #f58529);
+    background-size: 1000% 1000%;
+    border-radius:5px;
+    animation: instagram 5s ease infinite;
+    transition:transform 0.3s linear, box-shadow 0.3s linear;
+}
+
+@keyframes instagram {
+    0%{background-position:0% 15%}
+    50%{background-position:100% 86%}
+    100%{background-position:0% 15%}
+}
+
+#instagram:hover{
+    transform: translate(-10px, -10px);
+    box-shadow:10px 10px #777777
 }

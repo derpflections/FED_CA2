@@ -16,6 +16,7 @@
 <link rel="icon" href="../images/icon.JPG" />
 <!--Personal Javascript-->
 <script src="../javascript/feedback/feedbackImageReplacer.js" defer></script>
+<script src="../javascript/feedback/feedbackAnimations.js" defer></script>
 </head>
 
 <body>
@@ -52,11 +53,24 @@
  
   <div class="parallax-content" id="parallax-content1"></div>
 
+  <div class="maincontent" id="endofpage">
+    <div class="text-center fs-2 py-2 bg-dark text-light border border-dark border-bottom">That's the end of the website!</div>
+    <div class="text-center fs-4 py-2">Feel free to contact me through my social media!</div>
+    <div class="row" id="socialmedia d-flex justify-content-center">
+      <div class="col-xl-3 text-center" id="instagram"><i class="bi bi-instagram" id="instagramlogo"></i></div>
+      <div class="col-xl-3 text-center" id="youtube"><i class="bi bi-youtube" id="youtubelogo"></i></div>
+      <div class="col-xl-3 text-center" id="twitter"><i class="bi bi-twitter" id="twitterlogo"></i></div>
+      <div class="col-xl-3 text-center" id="reddit"><i class="bi bi-reddit" id="redditlogo"></i></div>
+    </div>
+  </div>
+
+  <div class="parallax-content" id="parallax-content2"></div>
+
    <!--feedbackform-->
 
   <div class="maincontent fs-3" id="formdiv">
-    <section id="form" class="text-start d-flex justify-content-center">
-      <form id="survey" action="#" method="post">
+    <section id="formsection" class="text-start d-flex justify-content-center">
+      <form id="survey" action="#" method="post" class="needs-validation">
         <fieldset>
 
           <div class="row p-3 mx-2">
@@ -81,7 +95,7 @@
           </div>
 
           <div class="row p-3 mx-2">
-            <label for="easeofuse" class="col-md-4 col-form-label">Was the website easy to understand?</label>
+            <label for="easeofuse" class="col-md-4 col-form-label pe-3">Was the website easy to understand?</label>
             <div class="col-md-8 py-3 pt-md-4 ps-2 row" id="easerating">
               <div class="col-sm-6">
                 <input name="easy" id="easyYes" type="radio" value="easy">
@@ -96,7 +110,7 @@
           </div>
 
           <div class="row p-3 mx-2">
-            <label for="easetoNav" class="col-md-4 col-form-label">Was the website easy to navigate?</label>
+            <label for="easetoNav" class="col-md-4 col-form-label pe-3">Was the website easy to navigate?</label>
             <div class="col-md-8 py-3 pt-md-4 ps-2 row" id="navrating">
               <div class="col-sm-6">
                 <input name="nav" id="navE" type="radio" value="easyNav">
@@ -109,7 +123,7 @@
             </div>
           </div>
 
-          <div class="row p-3 mx-2">
+          <div class="row p-3 mx-2"  id="hearsource">
             <label for="hearSource" class="col-md-4 col-form-label">How did you hear about me?</label>
             <div class="col-md-8 py-3 my-2">
               <select id="hearSource" class="my-2" >
@@ -121,21 +135,20 @@
             </div>
           </div>
 
-          <div class="row p-3 mx-2">
+          <div class="row p-3 mx-2" id="feedbackdiv">
             <label for="feedback" class="col-md-4 col-form-label">Any additional feedback?</label>
-            <div class="col-md-8">
+            <div class="col-md-8" >
               <textarea name="feedback" id="feedback" placeholder="Feedback here please!" rows="2" class="border border-dark"></textarea>
             </div>
           </div>
 
-          <div class="row p-3 mx-2">
+          <div class="row p-3 mx-2" id="omegatick">
             <label for="mailList" class="col-md-4 col-form-label">Add to mailing list for future updates?</label> 
             <div class="col-md-8">
               <input name="mailList" id="mailList" type="checkbox" value="yes" class="form-control-lg">
             </div>
-            </div> 
+          </div> 
 
-          </div>
           <div class="row p-3 mx-2">
             <button value="submit" type="submit" class="btn btn-dark col-sm-6 fs-3 xp">Submit!</button>
             <button value="submit" type="reset" class="btn btn-dark col-sm-6 fs-3">Reset!</button>
@@ -144,9 +157,6 @@
       </form>
   </section>
 </div>
-
-  <div class="parallax-content1" id="parallax-content2"></div>
-
 
 </body>
 </html>
