@@ -1,4 +1,38 @@
 @charset "utf-8";
+
+/*start of animation keyframes*/
+@keyframes gradAnimation {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+
+@keyframes instagram {
+    0%{background-position:0% 15%}
+    50%{background-position:100% 86%}
+    100%{background-position:0% 15%}
+}
+
+@keyframes youtube {
+    0%{background-position:0% 15%}
+    50%{background-position:100% 86%}
+    100%{background-position:0% 15%}
+}
+
+@keyframes twitter {
+    0%{background-position:0% 15%}
+    50%{background-position:100% 86%}
+    100%{background-position:0% 15%}
+}
+
+@keyframes reddit {
+    0%{background-position:0% 15%}
+    50%{background-position:100% 86%}
+    100%{background-position:0% 15%}
+}
+
+/*end of animation keyframes*/
+/*start of css*/
 .parallax-content{
     background-image:url(../images/feedback/parallax1.JPG);
     min-height:500px;
@@ -63,16 +97,6 @@ div#formdiv {
     animation: gradAnimation 15s ease infinite;
 }
 
-@keyframes gradAnimation {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
-}
-
-fieldset div:focus{
-    box-shadow: 5px 10px #888888;
-}
-
 i{
     font-size:3rem
 }
@@ -80,18 +104,95 @@ i{
 #instagram {
     background: linear-gradient(336deg, #515bd4, #8134af, #dd2a7b, #feda77, #f58529);
     background-size: 1000% 1000%;
-    border-radius:5px;
-    animation: instagram 5s ease infinite;
+    border-radius:15px;
+    animation: instagram 5s linear infinite;
     transition:transform 0.3s linear, box-shadow 0.3s linear;
-}
-
-@keyframes instagram {
-    0%{background-position:0% 15%}
-    50%{background-position:100% 86%}
-    100%{background-position:0% 15%}
 }
 
 #instagram:hover{
     transform: translate(-10px, -10px);
     box-shadow:10px 10px #777777
+}
+
+#youtube{
+    background: linear-gradient(336deg, #ff0000, #282828);
+    background-size: 400% 400%;
+    border-radius:15px;
+    animation: youtube 5s linear infinite;
+    transition:transform 0.3s linear, box-shadow 0.3s linear;
+}
+
+#youtube:hover{
+    transform:translate(-10px, -10px);
+    box-shadow:10px 10px #777777;
+}
+
+#twitter {
+    background: linear-gradient(336deg, #0084b4, #00aced, #1dcaff, #c0deed, #ffffff);
+    background-size: 1000% 1000%;
+    border-radius:15px;
+    animation: twitter 5s linear infinite;
+    transition:transform 0.3s linear, box-shadow 0.3s linear;
+}
+
+#twitter:hover{
+    transform:translate(-10px, -10px);
+    box-shadow:10px 10px #777777;
+}
+
+#reddit{
+    background: linear-gradient(336deg, #ff4500, #000000);
+    background-size: 400% 400%;
+    border-radius: 15px;
+    animation: reddit 4s ease infinite;
+    transition:transform 0.3s linear, box-shadow 0.3s linear;
+}
+
+#reddit:hover{
+    transform:translate(-10px, -10px);
+    box-shadow:10px 10px #777777;
+}
+ 
+div#socialmedia a{
+    width:15.5%;
+}
+
+a#phone{
+    background-color: #212529;
+    color:white;
+    border-radius: 15px;
+    transition:transform 0.3s linear, box-shadow 0.3s linear;
+}
+
+
+a#email{
+    background-color: #212529;
+    color:white;
+    border-radius: 15px;
+    transition:transform 0.3s linear, box-shadow 0.3s linear;
+}
+
+a#address{
+    background-color: #212529;
+    color:white;
+    border-radius: 15px;
+    transition:transform 0.3s linear, box-shadow 0.3s linear;
+}
+
+a#phone:hover, a#email:hover, a#address:hover{
+    transform:translate(-10px, -10px);
+    box-shadow:10px 10px #777777;
+}
+
+div#feedbackplea{
+    display:inline;
+}
+
+a#pleatext{
+    color:black;
+    transition: text-decoration 1s linear;
+}
+
+a#pleatext:hover{
+    text-decoration:underline;
 }
