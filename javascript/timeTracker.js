@@ -1,12 +1,14 @@
+var path = window.location.pathname;
+var page = path.split("/").pop();
+console.log(page);
 
-if(filename == "index.html"){
+
+if(page == "index.html"){
     var timeSpentOnPage = 0
     var globalTime = 0
-    var filename = url.substring(url.lastIndexOf('/')+1);
 } else {
     var timeSpentOnPage = 0 
     var globalTime = parseInt(sessionStorage.getItem("sitetime"))
-    var filename = url.substring(url.lastIndexOf('/')+1);
 }
 
 
@@ -17,7 +19,7 @@ function timeTracker(){
 }
 
 function timeCalculator(){
-    if(filename == "feedback.html"){
+    if(page == "feedback.html"){
         var minutes = Math.floor(sessionStorage.getItem("sitetime") / 60)
         var seconds = sessionStorage.getItem("sitetime") % 60
         document.getElementById("timeonSite").textContent = "You have been on the site for " + minutes +" minutes and " + seconds + " second(s)!"
