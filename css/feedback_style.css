@@ -153,10 +153,6 @@ i{
     box-shadow:10px 10px #777777;
 }
  
-div#socialmedia a{
-    width:15.5%;
-}
-
 a#phone{
     background-color: #212529;
     color:white;
@@ -195,4 +191,12 @@ a#pleatext{
 
 a#pleatext:hover{
     text-decoration:underline;
+}
+
+div#socialmedia a.fullwidth{
+    margin: 20px 20px 0px 0px
+}
+
+div#tradcontact a.fullwidth{
+    margin: 20px 20px 0px 0px
 }
