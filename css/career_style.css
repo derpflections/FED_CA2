@@ -6,9 +6,8 @@
     100%{background-position:50% 0%}
 }
 
-#parallax-content{
+.parallax-content{
     background-image:url(../images/career/parallax1.jpg);
-    
     /*own image*/
     min-height:500px;
     background-attachment: fixed;
@@ -17,7 +16,7 @@
     background-size: cover;
 }
 
-#parallax-content2{
+.parallax-content2{
     background-image:url(../images/career/parallax2.jpg);
         /*own image*/
     min-height:500px;
@@ -27,7 +26,7 @@
     background-size: cover;
 }
 
-#parallax-content3{
+.parallax-content3{
     background-image:url(../images/career/parallax3.jpg);
         /*own image*/
     min-height:500px;

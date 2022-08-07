@@ -33,11 +33,12 @@
         </button>
         <div class="collapse navbar-collapse" id="indexNavbar">
             <ul class="navbar-nav justify-content-end flex-grow-1">
-              <li class="nav-item active px-lg-4 py-1 px-3"><a class="active" aria-current="page" href="index.html" id="currentpage">Homepage</a></li>
+              <li class="nav-item active px-lg-4 py-1 px-3"><a class="active currentpage" aria-current="page" href="index.html">Homepage</a></li>
               <li class="nav-item px-lg-4 py-1 px-3"><a class="" href="experience.html">Experiences</a></li>
               <li class="nav-item dropdown px-lg-4 py-1 px-3">
                 <a class="dropdown-toggle" href="career.html" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Career Options</a>
                 <ul class="dropdown-menu bg-dark dropdown-menu-dark" aria-labelledby="dropdownMenuLink" id="navbardropdown">
+                  <li><a class="dropdown-item" href="career.html#maincontent0">Career List</a></li>
                   <li><a class="dropdown-item" href="career.html#maincontent1">Data Analyst</a></li>
                   <li><a class="dropdown-item" href="career.html#maincontent2">Data Engineer</a></li>
                   <li><a class="dropdown-item" href="career.html#maincontent3">Cybersecurity Analyst</a></li>
@@ -47,7 +48,6 @@
             </ul>
           </div>
         </div>
-      </div>
     </nav>
   </header>
   <!-- end of navbar -->
@@ -58,7 +58,7 @@
   <div class="maincontent border border-dark">      
     <div class="row d-flex justify-content-between">
       <div class="col-xl-6 col-xxl-7 p-4 pt-5 ps-5 fs-3" id="row1divtext">Hi! I am Hong Yi, a student currently undertaking the Common ICT Programme in Singapore Polytechnic. I am aged 16, and am a alumni of Swiss Cottage Secondary. I also have a passion for history and technology, and dream of being a data scientist in the future. Furthermore, I also have interests in photography and tanks. I would describe myself as passionate about my work, using it as a steady source of motivation to push me to do my best in anything I undertake.</div>
-      <div class="col-xl-6 col-xxl-5 p-3 pe-5 mt-2 d-flex justify-content-end" id ="row1div"><img src="../images/index/self-portrait-min.jpg"  id="row1selfportrait" class="align-middle rounded pe-3" height="320" width="535"></div>
+      <div class="col-xl-6 col-xxl-5 p-3 pe-5 mt-2 d-flex justify-content-end" id ="row1div"><img src="../images/index/self-portrait-min.jpg"  id="row1selfportrait" class="align-middle rounded pe-3" height="320" width="535" alt="picture of myself"></div>
       <!--own image-->
     </div>
   </div>
@@ -90,6 +90,8 @@
   </div>
 
   <div class="parallax-content" id="parallax-content3"></div>
+
+  <!--end of page-specific content-->
 
   <div class="position-relative border border-dark" id="nextpage" onscroll="indexPageRedirect()">
     <div class="position-absolute top-50 start-50 translate-middle display-6 pb-5" id="scrollBar">Scroll on me to continue to the next page!</div>

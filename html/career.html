@@ -35,8 +35,9 @@
             <li class="nav-item active px-lg-4 py-1 px-3"><a class="active" aria-current="page" href="index.html">Homepage</a></li>
             <li class="nav-item px-lg-4 py-1 px-3"><a class="" href="experience.html">Experiences</a></li>
             <li class="nav-item dropdown px-lg-4 py-1 px-3">
-              <a class="dropdown-toggle" href="career.html" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" id="currentpage">Career Options</a>
+              <a class="dropdown-toggle currentpage" href="career.html" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Career Options</a>
               <ul class="dropdown-menu bg-dark dropdown-menu-dark" aria-labelledby="dropdownMenuLink" id="navbardropdown">
+                <li><a class="dropdown-item" href="career.html#maincontent0">Career List</a></li>
                 <li><a class="dropdown-item" href="career.html#maincontent1">Data Analyst</a></li>
                 <li><a class="dropdown-item" href="career.html#maincontent2">Data Engineer</a></li>
                 <li><a class="dropdown-item" href="career.html#maincontent3">Cybersecurity Analyst</a></li>
@@ -46,11 +47,13 @@
           </ul>
         </div>
       </div>
-    </div>
   </nav>
 </header>
 <!-- end of navbar -->
-  <div id="parallax-content"></div>
+
+<!--start of page-specific content-->
+
+  <div class="parallax-content"></div>
 
   <div class="maincontent" id="maincontent0">
     <div class="py-2 fs-2 text-center text-light text-center" id="maincontent0header">Take a look at my dream careers here!</div>
@@ -82,7 +85,7 @@
     </div>
   </div>
 
-  <div id="parallax-content"></div>
+  <div class="parallax-content"></div>
 
   <div class="maincontent" id="maincontent1">
     <div>
@@ -100,7 +103,7 @@
     </div>
   </div>
 
-  <div id="parallax-content2"></div>
+  <div class="parallax-content2" id="pc21"></div>
 
   <div class="maincontent" id="maincontent2">
     <div>
@@ -118,7 +121,7 @@
     </div>
   </div>
 
-  <div id="parallax-content2"></div>
+  <div class="parallax-content2" id="pc22"></div>
 
   <div class="maincontent" id="maincontent3">
     <div>
@@ -137,6 +140,8 @@
   </div>
   <button onclick="topFunction()" id="topBtn" title="Go to top" class="visually-hidden sticky-bottom text-light"><i class="bi bi-arrow-up"></i></button>
   <div id="parallax-content3"></div>
+
+  <!--end of page-specific content-->
 
   <div class="position-relative" id="nextpage" onscroll="careerPageRedirect()">
     <div class="position-absolute top-50 start-50 translate-middle display-6 pb-5">Scroll on me to continue to the next page!</div>

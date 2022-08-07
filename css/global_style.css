@@ -31,10 +31,6 @@ html{
     background: linear-gradient(180deg, rgba(33,37,41,1) 0%, rgba(33,37,41,1) 10%, rgba(255,253,253,1) 100%);
 }
 
-.dropdown:hover .dropdown-menu{
-    display:block;
-}
-
 div.maincontent{
     overflow-x: hidden;
 }
@@ -44,9 +40,9 @@ img{
 }
 
 img:hover{
-    transform:scale(90%,90%)
+    transform:scale(0.9,0.9)
 }
 
-#currentpage{
+.currentpage{
     text-decoration: underline;
 }

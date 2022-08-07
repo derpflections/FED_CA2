@@ -34,10 +34,11 @@
         <div class="collapse navbar-collapse" id="indexNavbar">
             <ul class="navbar-nav justify-content-end flex-grow-1">
               <li class="nav-item active px-lg-4 py-1 px-3"><a class="active" aria-current="page" href="index.html">Homepage</a></li>
-              <li class="nav-item px-lg-4 py-1 px-3"><a class="" href="experience.html" id="currentpage">Experiences</a></li>
+              <li class="nav-item px-lg-4 py-1 px-3"><a class="currentpage" href="experience.html">Experiences</a></li>
               <li class="nav-item dropdown px-lg-4 py-1 px-3">
                 <a class="dropdown-toggle" href="career.html" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Career Options</a>
                 <ul class="dropdown-menu bg-dark dropdown-menu-dark" aria-labelledby="dropdownMenuLink" id="navbardropdown">
+                  <li><a class="dropdown-item" href="career.html#maincontent0">Career List</a></li>
                   <li><a class="dropdown-item" href="career.html#maincontent1">Data Analyst</a></li>
                   <li><a class="dropdown-item" href="career.html#maincontent2">Data Engineer</a></li>
                   <li><a class="dropdown-item" href="career.html#maincontent3">Cybersecurity Analyst</a></li>
@@ -47,11 +48,12 @@
             </ul>
           </div>
         </div>
-      </div>
     </nav>
   </header>
   <!-- end of navbar -->
-  <div id="parallax-content"></div>
+
+  <!--start of page-specific content-->
+  <div class="parallax-content"></div>
 
   <div class="maincontent">
 
@@ -63,7 +65,7 @@
         <div id="expMC1R1L">Before entering Singapore Polytechnic, I was a student of Swiss Cottage Secondary School. I graduated from Swiss Cottage in 2021, with my GCE O-Level certificate in hand. While a student of Swiss Cottage, I participated in several events, such as our internal Swiss Model United Nations. A member of the Publications and Media Club, I took up the position of Logistics Head, helping to organize the day-by-day events of the club. </div>
 
         <div id="expMC1R2L" class="border border-dark px-3 mt-3">
-
+<!--start of accordion-->
           <div class="text-center pt-2"><strong>Feedback from teachers!</strong></div>
 
           <div class="accordion py-3" id="accordionExample">
@@ -129,13 +131,12 @@
                 <footer class="blockquote-footer text-end px-3 fst-italic pt-3">Mdm Tan P S</footer>
               </div>
             </div>
-
           </div>
-
+<!--end of accordion-->
         </div>
 
       </div>
-
+<!--start of carousel-->
       <div class="col-lg-6 py-5" id="expMC1R1R">
         <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="false">
           <div class="carousel-indicators text-light">
@@ -182,7 +183,7 @@
     </div>
     </div>
   </div>
-
+<!--end of carousel-->
   <div id="parallax-content2"></div>
 
   <div class="maincontent">
@@ -206,7 +207,7 @@
                   <td colspan="2" rowspan="2"><img class="experienceI1 p-2" id="r2c2" alt="Presentation on a Whiteboard" src="../images/experience/proposal.jpg" height="367" width="489"></td>
                   <!--own image-->
               </tr>
-              <tr id="r3"></tr>
+              <tr id="r3"><td></td></tr>
               <tr id="r4">
                   <td id="r4c1" class="p-2">My experience in SP so far has been a fun, yet stressful one.</td>
                   <td id="r4c2" class="p-2">Having to strike a work-life balance in this new environment has been difficult.</td>
@@ -222,7 +223,7 @@
 
           </table>
         </div>
-
+<!--start of calculator-->
         <div class="col-xl-5 border border-dark" id="fop-terminal">
         <div class="fs-3 mb-5" id="calcHeader">Try out one of my projects I created using things I learned in my FOP module! (a calculator!)</div>
         <div class="bg-dark p-5" id="calculator">
@@ -234,31 +235,34 @@
             </table>
         
             <div class="keys">
-              <input type="button" value="7" class="button" onClick="display('7')"></input>        
-              <input type="button" value="8" class="button" onClick="display('8')"></input>       
-              <input type="button" value="9" class="button" onClick="display('9')"></input>       
-              <input type="button" value="/" class="operator" onClick="display('/')"></input>      
-              <input type="button" value="4" class="button" onClick="display('4')"></input>      
-              <input type="button" value="5" class="button" onClick="display('5')"></input>    
-              <input type="button" value="6" class="button" onClick="display('6')"></input>     
-              <input type="button" value="*" class="operator" onClick="display('*')"></input>
-              <input type="button" value="1" class="button" onClick="display('1')"></input>
-              <input type="button" value="2" class="button" onClick="display('2')"></input>
-              <input type="button" value="3" class="button" onClick="display('3')"></input>
-              <input type="button" value="-" class="operator" onClick="display('-')"></input>
-              <input type="button" value="0" class="button" onClick="display('0')"></input>
-              <input type="button" value="." class="button" onClick="display('.')"></input>
-              <input type="button" value= "=" class="button equal-sign" onClick="solve()"></input>
-              <input type="button" value="+" class="operator" onClick="display('+')"></input>
+              <input type="button" value="7" class="button" onClick="display('7')">       
+              <input type="button" value="8" class="button" onClick="display('8')">      
+              <input type="button" value="9" class="button" onClick="display('9')">     
+              <input type="button" value="/" class="operator" onClick="display('/')">    
+              <input type="button" value="4" class="button" onClick="display('4')">     
+              <input type="button" value="5" class="button" onClick="display('5')">   
+              <input type="button" value="6" class="button" onClick="display('6')">     
+              <input type="button" value="*" class="operator" onClick="display('*')">
+              <input type="button" value="1" class="button" onClick="display('1')">
+              <input type="button" value="2" class="button" onClick="display('2')">
+              <input type="button" value="3" class="button" onClick="display('3')">
+              <input type="button" value="-" class="operator" onClick="display('-')">
+              <input type="button" value="0" class="button" onClick="display('0')">
+              <input type="button" value="." class="button" onClick="display('.')">
+              <input type="button" value= "=" class="button equal-sign" onClick="solve()">
+              <input type="button" value="+" class="operator" onClick="display('+')">
             </div> 
           </div>
 
         </div>
+<!--end of calculator-->
       </div>
     </div>
   </div>
 
-  <div id="parallax-content"></div>
+  <div class="parallax-content"></div>
+
+  <!--end of page-specific content-->
 
   <div class="position-relative" id="nextpage" onscroll="experiencePageRedirect()">
     <div class="position-absolute top-50 start-50 translate-middle display-6 pb-5">Scroll on me to continue to the next page!</div>

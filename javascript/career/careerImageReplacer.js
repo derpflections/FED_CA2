@@ -9,9 +9,11 @@ function pollViewport (){
 
 function imageReplace (){
     if (windowWidth < 900){
-        document.getElementById("parallax-content2").style.backgroundImage = "url('../images/career/parallax2-crop.jpg')"
+        document.getElementById("pc21").style.backgroundImage = "url('../images/career/parallax2-crop.jpg')"
+        document.getElementById("pc22").style.backgroundImage = "url('../images/career/parallax2-crop.jpg')"
     } else if (windowWidth > 900){
-        document.getElementById("parallax-content2").style.backgroundImage = "url('../images/career/parallax2.jpg')"
+        document.getElementById("pc21").style.backgroundImage = "url('../images/career/parallax2.jpg')"
+        document.getElementById("pc22").style.backgroundImage = "url('../images/career/parallax2.jpg')"
     }
 }
 
