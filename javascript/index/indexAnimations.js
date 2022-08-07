@@ -42,10 +42,16 @@ function row2fadeIn(){
 function fontSizeChanger(){
     if (window.innerWidth < 576){
         document.getElementById("row1divtext").style.fontSize = "1em"
-        document.getElementById("scrollBar").style.fontSize = "1em"
+        document.getElementById("scrollBar").style.fontSize = "1.5em"
+        document.getElementById("aboutMeMC2R1").style.fontSize = "1em"
+        document.getElementById("aboutMeMC2R2").style.fontSize = "1em"
+        document.getElementById("aboutMeMC2R3").style.fontSize = "1em"
     } else if (window.innerWidth > 576){
         document.getElementById("row1divtext").style.fontSize = "1.5em"
         document.getElementById("scrollBar").style.fontSize = "2.5rem"
+        document.getElementById("aboutMeMC2R1").style.fontSize = "1.5em"
+        document.getElementById("aboutMeMC2R2").style.fontSize = "1.5em"
+        document.getElementById("aboutMeMC2R3").style.fontSize = "1.5em"
     }
 }
 
