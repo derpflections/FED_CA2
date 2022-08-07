@@ -2,6 +2,7 @@
 
 .parallax-content{
     background-image:url(../images/index/parallax2.jpg);
+        /*own image*/
     min-height:500px;
     background-attachment: fixed;
     background-position: center;
@@ -11,6 +12,7 @@
 
 .parallax-content2{
     background-image:url(../images/index/parallax.jpg);
+        /*own image*/
     min-height:500px;
     background-attachment: fixed;
     background-position: center;

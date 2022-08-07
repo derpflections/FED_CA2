@@ -8,6 +8,8 @@
 
 #parallax-content{
     background-image:url(../images/career/parallax1.jpg);
+    
+    /*own image*/
     min-height:500px;
     background-attachment: fixed;
     background-position: center;
@@ -17,6 +19,7 @@
 
 #parallax-content2{
     background-image:url(../images/career/parallax2.jpg);
+        /*own image*/
     min-height:500px;
     background-attachment: fixed;
     background-position: center;
@@ -26,6 +29,7 @@
 
 #parallax-content3{
     background-image:url(../images/career/parallax3.jpg);
+        /*own image*/
     min-height:500px;
     background-attachment: fixed;
     background-position: center;

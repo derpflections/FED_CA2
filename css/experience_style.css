@@ -1,6 +1,7 @@
 @charset "utf-8";
 #parallax-content{
     background-image:url(../images/experience/F4470008.JPG);
+        /*own image*/
     min-height:500px;
     background-attachment: fixed;
     background-position: center;
@@ -10,6 +11,7 @@
 
 #parallax-content2{
     background-image:url(../images/experience/F4470005.JPG);
+        /*own image*/
     min-height:500px;
     background-attachment: fixed;
     background-position: center;

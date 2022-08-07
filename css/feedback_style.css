@@ -35,6 +35,7 @@
 /*start of css*/
 .parallax-content{
     background-image:url(../images/feedback/parallax1.JPG);
+        /*own image*/
     min-height:500px;
     background-attachment: fixed;
     background-position: center;
@@ -44,6 +45,7 @@
 
 .parallax-content2{
     background-image:url(../images/feedback/parallax2.JPG);
+        /*own image*/
     min-height:500px;
     background-attachment: fixed;
     background-position: center;
