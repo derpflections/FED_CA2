@@ -38,3 +38,15 @@ html{
 div.maincontent{
     overflow-x: hidden;
 }
+
+img{
+    transition:transform .3s linear
+}
+
+img:hover{
+    transform:scale(90%,90%)
+}
+
+#currentpage{
+    text-decoration: underline;
+}

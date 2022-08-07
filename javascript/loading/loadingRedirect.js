@@ -4,7 +4,6 @@ var finalPage = ""
 var url = window.location.pathname;
 var filename = url.substring(url.lastIndexOf('/')+1);
 
-//document.getElementById("nextpage").addEventListener("scroll", indexPageRedirect)
 
 function indexPageRedirect(){
     initialPage = "index.html"

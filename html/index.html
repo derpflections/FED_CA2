@@ -19,6 +19,7 @@
 <script src="../javascript/index/indexImageReplacer.js" defer></script>
 <script src="../javascript/index/indexAnimations.js" defer></script>
 <script src="../javascript/loading/loadingRedirect.js" defer></script>
+<script src="../javascript/timeTracker.js" defer></script>
 </head>
 
 <body>
@@ -26,13 +27,13 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-dark"> <!--navbar collapses at lg breakpoint, stuck to top (darkmode)-->
       <div class="container-fluid">
-        <a class="navbar-brand px-lg-4 px-2" href="index.html">Lee Hong Yi</a> 
+        <a class="navbar-brand px-lg-4 px-2" href="index.html" >Lee Hong Yi</a> 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#indexNavbar" aria-controls="indexNavbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span> <!-- this line and the line above are used to generate the button to open navbar when collapsed-->
         </button>
         <div class="collapse navbar-collapse" id="indexNavbar">
             <ul class="navbar-nav justify-content-end flex-grow-1">
-              <li class="nav-item active px-lg-4 py-1 px-3"><a class="active" aria-current="page" href="index.html">Homepage</a></li>
+              <li class="nav-item active px-lg-4 py-1 px-3"><a class="active" aria-current="page" href="index.html" id="currentpage">Homepage</a></li>
               <li class="nav-item px-lg-4 py-1 px-3"><a class="" href="experience.html">Experiences</a></li>
               <li class="nav-item dropdown px-lg-4 py-1 px-3">
                 <a class="dropdown-toggle" href="career.html" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Career Options</a>
@@ -56,8 +57,8 @@
 
   <div class="maincontent border border-dark">      
     <div class="row d-flex justify-content-between">
-      <div class="col-xl-8 p-4 pt-5 ps-5 fs-3" id="row1divtext">Hi! I am Hong Yi, a student currently undertaking the Common ICT Programme in Singapore Polytechnic. I am aged 16, and am a alumni of Swiss Cottage Secondary. I also have a passion for history and technology, and dream of being a data scientist in the future. Furthermore, I also have interests in photography and tanks. I would describe myself as passionate about my work, using it as a steady source of motivation to push me to do my best in anything I undertake.</div>
-      <div class="col-xl-4 p-3 pe-5 mt-2 d-flex justify-content-end" id ="row1div"><img src="../images/index/self-portrait-min.jpg"  id="row1selfportrait" class="align-middle rounded pe-3" height="320" width="535"></div>
+      <div class="col-xl-6 col-xxl-7 p-4 pt-5 ps-5 fs-3" id="row1divtext">Hi! I am Hong Yi, a student currently undertaking the Common ICT Programme in Singapore Polytechnic. I am aged 16, and am a alumni of Swiss Cottage Secondary. I also have a passion for history and technology, and dream of being a data scientist in the future. Furthermore, I also have interests in photography and tanks. I would describe myself as passionate about my work, using it as a steady source of motivation to push me to do my best in anything I undertake.</div>
+      <div class="col-xl-6 col-xxl-5 p-3 pe-5 mt-2 d-flex justify-content-end" id ="row1div"><img src="../images/index/self-portrait-min.jpg"  id="row1selfportrait" class="align-middle rounded pe-3" height="320" width="535"></div>
     </div>
   </div>
   

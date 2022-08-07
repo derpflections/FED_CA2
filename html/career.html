@@ -17,6 +17,7 @@
 <!--Personal Javascript-->
 <script src="../javascript/loading/loadingRedirect.js" defer></script>  
 <script src="../javascript/career/careerImageReplacer.js" defer></script> 
+<script src="../javascript/timeTracker.js" defer></script>
 </head>
 
 <body>
@@ -33,7 +34,7 @@
             <li class="nav-item active px-lg-4 py-1 px-3"><a class="active" aria-current="page" href="index.html">Homepage</a></li>
             <li class="nav-item px-lg-4 py-1 px-3"><a class="" href="experience.html">Experiences</a></li>
             <li class="nav-item dropdown px-lg-4 py-1 px-3">
-              <a class="dropdown-toggle" href="career.html" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Career Options</a>
+              <a class="dropdown-toggle" href="career.html" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" id="currentpage">Career Options</a>
               <ul class="dropdown-menu bg-dark dropdown-menu-dark" aria-labelledby="dropdownMenuLink" id="navbardropdown">
                 <li><a class="dropdown-item" href="career.html#maincontent1">Data Analyst</a></li>
                 <li><a class="dropdown-item" href="career.html#maincontent2">Data Engineer</a></li>
@@ -48,6 +49,38 @@
   </nav>
 </header>
 <!-- end of navbar -->
+  <div id="parallax-content"></div>
+
+  <div class="maincontent" id="maincontent0">
+    <div class="py-2 fs-2 text-center text-light text-center" id="maincontent0header">Take a look at my dream careers here!</div>
+
+    <div class="row" id="cardrow">
+      <div class="card m-2 col-xl w-50 text-center" id="card1">
+        <div class="card-body">
+          <h5 class="card-title">Cyber Security Analyst</h5>
+          <p class="card-text">A cybersecurity analyst protects company hardware, software, and networks from cybercriminals.</p>
+          <a href="career.html#maincontent3" class="btn btn-primary">Click here!</a>
+        </div>
+      </div>
+
+      <div class="card m-2 col-xl w-50 text-center" id="card2">
+        <div class="card-body">
+          <h5 class="card-title">Data Analyst</h5>
+          <p class="card-text">A data analyst reviews given data to identify key insights to give to the customers of a business.</p>
+          <a href="career.html#maincontent1" class="btn btn-primary">Click here!</a>
+        </div>
+      </div>
+
+      <div class="card m-2 col-xl w-50 text-center" id="card3">
+        <div class="card-body">
+          <h5 class="card-title">Data Engineer</h5>
+          <p class="card-text">A data engineer is an IT worker whose primary job is to prepare data for analytical or operational uses.</p>
+          <a href="career.html#maincontent2" class="btn btn-primary">Click here!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div id="parallax-content"></div>
 
   <div class="maincontent" id="maincontent1">
@@ -84,7 +117,7 @@
     </div>
   </div>
 
-  <div id="parallax-content3"></div>
+  <div id="parallax-content2"></div>
 
   <div class="maincontent" id="maincontent3">
     <div>
@@ -102,7 +135,7 @@
     </div>
   </div>
 
-  <div id="parallax-content"></div>
+  <div id="parallax-content3"></div>
 
   <div class="position-relative" id="nextpage" onscroll="careerPageRedirect()">
     <div class="position-absolute top-50 start-50 translate-middle display-6 pb-5">Scroll on me to continue to the next page!</div>

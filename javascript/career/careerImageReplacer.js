@@ -33,8 +33,20 @@ function imageScale(){
     }
 }
 
+function cardChange(){
+    if(window.innerWidth < 1200){
+        document.getElementById("card1").classList.remove("w-50")
+        document.getElementById("card2").classList.remove("w-50")
+        document.getElementById("card3").classList.remove("w-50")
+    }else if(window.innerWidth > 1200){
+        document.getElementById("card1").classList.add("w-50")
+        document.getElementById("card2").classList.add("w-50")
+        document.getElementById("card3").classList.add("w-50")
+    }
+}
 
 
 setInterval(pollViewport, 50)
 setInterval(imageReplace, 50)
 setInterval(imageScale, 50)
+setInterval(cardChange,50)
