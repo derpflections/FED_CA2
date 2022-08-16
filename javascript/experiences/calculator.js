@@ -1,9 +1,9 @@
-function display(val){
+function display(val){  //shows numbers
     document.getElementById('result').value += val
     return val
 }
 
-function solve(){
+function solve(){  //takes value in result div and solves
     let x = document.getElementById('result').value
     let y = eval(x);
     document.getElementById('result').value = y

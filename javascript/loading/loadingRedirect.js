@@ -5,7 +5,7 @@ var url = window.location.pathname;
 var filename = url.substring(url.lastIndexOf('/')+1);
 
 
-function indexPageRedirect(){
+function indexPageRedirect(){  //redirects for indexpage
     initialPage = "index.html"
     destPage = "experience.html"
     sessionStorage.setItem("initialPage", initialPage)

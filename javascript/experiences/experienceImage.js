@@ -5,7 +5,7 @@ function pollViewport (){
     windowWidth = window.innerWidth //checks the height and width of the viewport
 }
 
-function tableImage(){
+function tableImage(){  //ensurs that the image sizes are responsive
     if(windowWidth > 1200){
         document.getElementById("r2c1").width = (windowWidth*0.2546)
         document.getElementById("r2c1").height = ((windowWidth*0.2546)*.7505)

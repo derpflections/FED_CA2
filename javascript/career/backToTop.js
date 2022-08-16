@@ -1,5 +1,5 @@
 function btnViz(){
-    if(document.documentElement.scrollTop >  400){
+    if(document.documentElement.scrollTop >  400){ //if >400px from top the scroll to top button shows
         document.getElementById("topBtn").classList.remove("visually-hidden")
     } else if(document.documentElement.scrollTop < 400){
         document.getElementById("topBtn").classList.add("visually-hidden")

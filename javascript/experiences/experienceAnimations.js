@@ -5,7 +5,7 @@ carouselArray.push("<p>Delegate of Russia during Model United Nations.</p>")
 
 var currentCaption = ""
 
-function textResizer(){
+function textResizer(){ //makes text easy to read on larger displays.
  if (window.innerWidth < 576){
     document.getElementById("p2row1divtext").style.fontSize = "1em"
  } else if (window.innerWidth > 576){
@@ -13,7 +13,7 @@ function textResizer(){
  }
 }
 
-function accordionOpener(){
+function accordionOpener(){  //shows testimonial on ultrawide displays
    if (window.innerWidth > 2000){
       document.getElementById("collapseFour").classList.add("show")
    } else {
@@ -21,7 +21,7 @@ function accordionOpener(){
    }
 }
 
-function carouselCaption(){
+function carouselCaption(){ //via classlist, identifies which picture the carousel is on and displays appropriate caption
    if(window.innerWidth < 768){
       document.getElementById("expCarouselCap").classList.remove("visually-hidden")
       if(document.getElementById("img1").classList.contains("active")){
