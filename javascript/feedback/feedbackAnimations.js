@@ -1,4 +1,4 @@
-function centersocials(){
+function centersocials(){  //when below width, use classes to change margin
     if(window.innerWidth > 1200){
         document.getElementById("instagram").classList.add("fullwidth")
         document.getElementById("youtube").classList.add("fullwidth")
@@ -19,7 +19,7 @@ function centersocials(){
 }
 
 
-function centerText(){ 
+function centerText(){ //centers the text in feedbackform when collapsed
  if (window.innerWidth < 576){
         document.getElementById("easerating").classList.add("text-center")
         document.getElementById("navrating").classList.add("text-center")
@@ -36,7 +36,7 @@ function centerText(){
 }
 
 function width(){
-    if(window.innerWidth < 576){
+    if(window.innerWidth < 576){ //changes css when below certain width
         document.getElementById("formsection").classList.remove("formsectionfull")
         document.getElementById("formsection").classList.add('formsectionshrink')
     }else if(window.innerWidth > 576){
@@ -45,7 +45,7 @@ function width(){
     }
 }
 
-function pillfont(){
+function pillfont(){  //hides usernames/text when below certain width
     if(window.innerWidth < 400){
         document.getElementById("instagramtext").classList.add("visually-hidden")
         document.getElementById("youtubetext").classList.add("visually-hidden")

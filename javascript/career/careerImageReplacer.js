@@ -7,7 +7,7 @@ function pollViewport (){
     windowWidth = window.innerWidth //checks  the height and width of the viewport
 }
 
-function imageReplace (){
+function imageReplace (){  //for parallax images
     if (windowWidth < 900){
         document.getElementById("pc21").style.backgroundImage = "url('../images/career/parallax2-crop.jpg')"
         document.getElementById("pc22").style.backgroundImage = "url('../images/career/parallax2-crop.jpg')"
@@ -17,7 +17,7 @@ function imageReplace (){
     }
 }
 
-function imageScale(){
+function imageScale(){ //for career images
     if(window.innerWidth > 1600){
         document.getElementById("c1pic").width = (window.innerWidth * 0.21875)
         document.getElementById("c1pic").height = (window.innerWidth * 0.21875) / 1.3125
@@ -35,7 +35,7 @@ function imageScale(){
     }
 }
 
-function cardChange(){
+function cardChange(){ //padding for career cards
     if(window.innerWidth < 1200){
         document.getElementById("card1").classList.remove("w-50")
         document.getElementById("card2").classList.remove("w-50")

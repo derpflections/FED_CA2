@@ -1,9 +1,9 @@
 var path = window.location.pathname;
-var page = path.split("/").pop();
-console.log(page);
+var page = path.split("/").pop(); //identifies name of file
+console.log(page); //prints in console for troubleshooting
 
 
-if(page == "index.html"){
+if(page == "index.html"){  //initalizes time for index page
     var timeSpentOnPage = 0
     var globalTime = 0
 } else {
@@ -12,13 +12,13 @@ if(page == "index.html"){
 }
 
 
-function timeTracker(){
+function timeTracker(){  //adds a second to total time
     timeSpentOnPage++
     sessionStorage.setItem("sitetime", (globalTime + timeSpentOnPage))
     console.log(sessionStorage.getItem("sitetime"))
 }
 
-function timeCalculator(){
+function timeCalculator(){ //breaks the total time into mins and sec + prints
     if(page == "feedback.html"){
         var minutes = Math.floor(sessionStorage.getItem("sitetime") / 60)
         var seconds = sessionStorage.getItem("sitetime") % 60

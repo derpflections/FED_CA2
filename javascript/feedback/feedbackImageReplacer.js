@@ -5,7 +5,7 @@ function pollViewport (){
     windowWidth = window.innerWidth
 }
 
-function imageReplace (){
+function imageReplace (){  //changes parallax images
     if (windowWidth < 900){
         document.getElementById("parallax-content1").style.backgroundImage = "url('../images/feedback/parallax1_crop.jpg')"
     } else if (windowWidth > 900){

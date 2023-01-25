@@ -114,3 +114,8 @@ div#accordion4{
 div#fop-terminal table td{
     border:1px solid white;
 }
+
+html {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
